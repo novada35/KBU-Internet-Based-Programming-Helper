@@ -6,44 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baba ile Kodluyoruz</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/button.sass">
+    <script>
+        window.onload = function() {
+          var context = new AudioContext();
+        }
+    </script>
 </head>
 <body>
     <section id="Father">
         <div class="father container">
             <!--Button-->
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                <defs>
-                    <filter id="gooey">
-                        <!-- in="sourceGraphic" -->
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-                        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic" />
-                        <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
-                    </filter>
-                </defs>
-            </svg>
-            <button id="gooey-button">
-                F*** Awesome
-                <span class="bubbles">
-                    <span class="bubble"></span>
-                    <span class="bubble"></span>
-                    <span class="bubble"></span>
-                    <span class="bubble"></span>
-                    <span class="bubble"></span>
-                    <span class="bubble"></span>
-                    <span class="bubble"></span>
-                    <span class="bubble"></span>
-                    <span class="bubble"></span>
-                    <span class="bubble"></span>
-                </span>
-            </button>
-          <!--Audio-->
-          <div class="audio">
-
-          </div>
+            <button class="button-1" role="button">HTML</button>
+            <button class="button-1" role="button">CSS</button>
+            <button class="button-1" role="button">JAVASCRIPT</button>
+            <button class="button-1" role="button">PHP</button>
         </div>
-    </section>
-    <section id="footer">
-
+        <audio controls autoplay="true" loop class="audio">
+            <source src="./audio/a.mp3" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
     </section>
 </body>
 </html>
